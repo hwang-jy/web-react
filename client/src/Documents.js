@@ -75,7 +75,7 @@ function DocumentList(props){
 function ViewDocument(props){
   let docs = null;
   for(let i=0; i<props.docs.length; i++){
-    if(props.docs[i].id == props.id){
+    if(props.docs[i].id === props.id){
       docs = props.docs[i];
       break;
     }
@@ -100,7 +100,6 @@ function App() {
   const [id, setId] = useState(null);
 
   let content = "";
-  let createBtn = "";
   if(mode === "WELCOME"){
     content = 
     <div>
@@ -118,7 +117,7 @@ function App() {
         event.preventDefault();
         const newDocs = [];
         for(let i=0; i<docs.length; i++){
-          if(docs[i].id != event.target.id){
+          if(docs[i].id !== event.target.id){
             newDocs.push(docs[i]);
           }
         }
@@ -150,7 +149,7 @@ function App() {
         const copyDocs = [...docs];
 
         for(let i=0; i<copyDocs.length; i++){
-          if(copyDocs[i].id == id){
+          if(copyDocs[i].id === id){
             copyDocs[i] = updateDocs;
             break;
           }
