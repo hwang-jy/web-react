@@ -1,0 +1,21 @@
+{
+  "name": "web-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && nodemon server",
+    "client": "cd client && yarn start",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwang-jy/web-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hwang-jy/web-react/issues"
+  },
+  "homepage": "https://github.com/hwang-jy/web-react#readme"
+}
