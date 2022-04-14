@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import DocumentApp from './Documents';
+
+import App from './components/App';
+
+//import DocumentApp from './Documents';
+//import TutorialApp from './TutorialApp';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/*
     <DocumentApp />
+    <TutorialApp>im children!</TutorialApp>
+    */}
+
+    <App/>
   </React.StrictMode>
 );
 
