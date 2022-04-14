@@ -1,24 +1,16 @@
-import React from 'react';
-import {hot} from 'react-hot-loader';
+import * as React from 'react';
+import Contact from './Contact';
 
 class App extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            name: ''
-        };
-    }
+    // JavaScript 문법을 사용하므로 정상적인 주석이다.
+	render(){
+		return(
+			<div>
+                <Contact/>
+			</div>
+		);
+	}
+};
 
-    render(){
-        return(
-            <div>
-                <button onClick={() => {
-                    this.setState({name:"Velopert"});
-                }}>click me!</button>
-                <h1>hello? {this.state.name}</h1>
-            </div>
-        );
-    }
-}
 
-export default hot(module)(App);
+export default App;
