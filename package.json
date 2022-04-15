@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/hwang-jy/web-react/issues"
   },
-  "homepage": "https://github.com/hwang-jy/web-react#readme"
+  "homepage": "https://github.com/hwang-jy/web-react#readme",
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
 }

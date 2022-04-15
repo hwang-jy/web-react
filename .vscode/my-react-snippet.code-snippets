@@ -1,0 +1,36 @@
+{
+	".source.js":{
+		"scope": "javascript",
+		"prefix": "rc",
+		"body": [
+			"import React, { Component } from 'react';",
+			"import PropTypes from 'prop-types';",
+			"",
+			"const propTypes = {",
+			"",
+			"}",
+			"",
+			"const defaultProps = {",
+			"",
+			"}",
+			"",
+			"class ${1:ComponentName} extends Component {",
+			"\tconstructor(props){",
+			"\t\tsuper(props);",
+			"\t}",
+			"",
+			"\trender() {",
+			"\t\treturn(",
+			"\t\t\t<div>${1:ComponentName}</div>",
+			"\t\t);",
+			"\t}",
+			"}",
+			"",
+			"${1:ComponentName}.propTypes = propTypes;",
+			"${1:ComponentName}.defaultProps = defaultProps;",
+			"",
+			"export default ${1:ComponentName};"
+		],
+		"description": "react preset - new class"
+	}
+}
