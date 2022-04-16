@@ -4,7 +4,7 @@ import colorReducer from '../features/color/colorSlice';
 
 const rootReducer = combineReducers({
   counter: counterReducer,
-  color: colorReducer
+  ui: colorReducer
 })
 
 export const store = configureStore({

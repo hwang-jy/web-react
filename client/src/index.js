@@ -10,10 +10,6 @@ import { store } from './app/store'
 import { Provider } from 'react-redux'
 
 store.subscribe(() => console.log(store.getState()));
-// store.dispatch(counterReducer.incremented());
-// store.dispatch(counterReducer.incremented());
-// store.dispatch(counterReducer.incremented());
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
