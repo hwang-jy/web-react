@@ -1,3 +1,2 @@
 node_modules
-server/config/database.json
-server/config/google.json
+!server/config/*.template.json
