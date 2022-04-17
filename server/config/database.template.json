@@ -1,6 +1,6 @@
 {
   "host": "",
-  "user": "",
+  "user": "manager",
   "password": "",
   "database": ""
 }
